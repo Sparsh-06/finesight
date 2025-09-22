@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://sparshsharma:sparsh17156@genai.2hcl3o0.mongodb.net/?retryWrites=true&w=majority&appName=genAI')
+mongoose.connect(process.env.MONGODB_URI')
 .then(() => {
   console.log('✅ Connected to MongoDB');
 })
